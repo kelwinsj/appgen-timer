@@ -1,0 +1,11 @@
+---
+import MainLayout from '../layouts/main.astro';
+import PageWrapper from '../components/PageWrapper';
+import TimeProgressTracker from '../components/TimeProgressTracker';
+---
+
+<MainLayout>
+  <PageWrapper client:only="react">
+    <TimeProgressTracker client:only="react" />
+  </PageWrapper>
+</MainLayout>
